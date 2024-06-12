@@ -6,7 +6,7 @@ export default defineConfig({
     emptyOutDir: true,  // Limpa o diretório de saída antes de construir
     rollupOptions: {
       input: {
-        main: './src/main.js',  // Arquivo de entrada principal
+        main: './main.js',  // Arquivo de entrada principal
       }
     }
   }
