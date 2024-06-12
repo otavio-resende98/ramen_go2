@@ -1,5 +1,4 @@
 import { defineConfig } from 'vite'
-import path from 'path'
 
 export default defineConfig({
   transpileDependencies: true,
@@ -9,5 +8,8 @@ export default defineConfig({
         target: 'http://localhost:3000'
       }
     }
+  },
+  build: {
+    outDir: 'dist'  // Garante que a saída seja para a pasta 'dist'
   }
 })
