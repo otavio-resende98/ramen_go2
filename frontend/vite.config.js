@@ -1,14 +1,8 @@
-// client/vite.config.js
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  server: {
-    proxy: {
-      '/api': {
-        target: 'https://localhost:5000',
-        changeOrigin: true,
-        rewrite: (path) => path.replace('/api', '')
-      }
-    }
+  build: {
+    outDir: '../public', // Diretório de saída para os arquivos de build
+    emptyOutDir: true, // Limpar o diretório de saída antes de construir
   }
 });

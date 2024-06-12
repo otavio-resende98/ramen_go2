@@ -4,11 +4,11 @@ https://cloud.mongodb.com/v2/665ea143c673b74f2a99bb7f#/metrics/replicaSet/665ea1
 
 endpoints:
 
-Get Broths: http://localhost:5000/broths
+Get Broths: https://localhost:5000/broths
 
-Get Proteins: http://localhost:5000/proteins
+Get Proteins: https://localhost:5000/proteins
 
-Post Order: http://localhost:5000/orders
+Post Order: https://localhost:5000/orders
 
 body: `
     {
