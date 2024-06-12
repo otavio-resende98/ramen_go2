@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 const MONGODB_URI = 'mongodb+srv://root:root@db-express.4fwcimy.mongodb.net/?retryWrites=true&w=majority&appName=DB-Express';
 
 mongoose.connect(MONGODB_URI, {
@@ -23,13 +23,13 @@ app.use(cors());
 
 //Routers
 const broths = require('./routes/broths');
-app.use('/api/broths', broths);
+app.use('/broths', broths);
 
 const proteins = require('./routes/proteins');
-app.use('/api/proteins', proteins);
+app.use('/proteins', proteins);
 
 const orders = require('./routes/orders');
-app.use('/api/orders', orders);
+app.use('/orders', orders);
 
 app.listen(PORT, () => {
   console.log(`Servidor rodando na porta ${PORT}`);
