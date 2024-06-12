@@ -1,13 +1,14 @@
-import { defineConfig } from 'vite'
-import path from 'path'
+// client/vite.config.js
+import { defineConfig } from 'vite';
 
 export default defineConfig({
-  transpileDependencies: true,
-  server:{
-    proxy:{
-      '/api':{
-        target: 'http://localhost:3000'
+  server: {
+    proxy: {
+      '/api': {
+        target: 'http://localhost:5000',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, '')
       }
     }
   }
-})
+});
