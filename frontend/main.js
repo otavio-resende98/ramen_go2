@@ -4,10 +4,10 @@ import {listProteins} from './src/components/proteins.js';
 import {scrollWidgetBroth} from './src/components/widgetbroth.js';
 import {scrollWidgetProtein} from './src/components/widgetprotein.js';
 import {buttonPlaceNewOrder} from './src/components/buttonOrder.js';
-import logoImg from './public/images/logo'
-import entregadoraImg from './public/images/entregadora'
-import balaoAzulImg from './public/images/BalaoAzul'
-import balaoAmareloImg from './public/images/BalaoAmarelo'
+import logoImg from './public/images/logo.png'
+import entregadoraImg from './public/images/entregadora.png'
+import balaoAzulImg from './public/images/BalaoAzul.png'
+import balaoAmareloImg from './public/images/BalaoAmarelo.png'
 
 const logo = document.createElement('img');
 logo.src = logoImg
