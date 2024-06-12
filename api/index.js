@@ -19,7 +19,7 @@ mongoose.connect(process.env.MONGODB_URI, {
     console.error('Failed to connect to MongoDB', err);
   });
 
-// Definir uma rota de teste
+// Rota de exemplo
 app.get('/api/hello', (req, res) => {
   res.json({ message: 'Hello, World!' });
 });
