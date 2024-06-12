@@ -16,7 +16,7 @@ export async function buttonPlaceNewOrder(element){
         console.log(orderSelected)
 
         try{
-            order = await PostService.insertPost('https://localhost:5000/orders', orderSelected);
+            order = await PostService.insertPost('/orders', orderSelected);
             console.log(order)
         } catch(err){
             console.log(err)

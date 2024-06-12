@@ -8,7 +8,7 @@ export async function listBroths(element) {
     //methods
     async function get(){
         try{
-            broths = await PostService.getPosts('https://localhost:5000/broths');
+            broths = await PostService.getPosts('/broths');
         } catch(err){
             console.log(err)
         }
